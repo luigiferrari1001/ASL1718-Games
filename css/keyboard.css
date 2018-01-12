@@ -1,0 +1,35 @@
+/* keyboard.css
+   Tastiera per i giochi
+   Versione 24.7.2017 
+*/
+
+.tasto{
+	background-color:#3d3d3d;
+    border-radius: 16px;
+    color: white;
+    padding: 1% 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    cursor: pointer;
+	width: 6vh;
+	height: 6vh;
+	margin-bottom: 3px;
+	font-family: "Arial";
+	font-weight: normal;
+}
+
+.tasto:hover{
+    background-color: #404040;
+}
+
+#cancella:hover{
+	background-color:#da291c;
+}
+
+#tastiera{
+
+}
+
+

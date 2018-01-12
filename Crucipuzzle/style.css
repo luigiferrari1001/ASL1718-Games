@@ -1,0 +1,202 @@
+/*tag semantici e pagina*/
+
+@import url("../css/fonts.css");
+
+header{
+	height:9vh;
+}
+
+body{
+	-webkit-user-select: none;    
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+	-o-user-select: none;
+	user-select: none;
+	margin:0;
+	overflow: hidden;
+}
+
+#testo{
+	text-align:center;
+	font-size:110%;
+	height:7vh;
+}
+
+#homepage{
+	display: inline;
+	position: absolute;
+    left: 0px;
+	height: 10vh;
+	width: auto;
+	padding-left: 2vw;
+	padding-top:1vh;
+	outline:none;
+}
+
+
+#soluzione{
+	display: inline;
+	position: absolute;
+    right: 0px;
+	height: 10vh;
+	width: auto;
+	padding-right: 2vw;
+	padding-top:1vh;
+	outline:none;
+}
+
+#titolo{
+	margin:auto;
+	width: 80%;
+    text-align: center;
+	color:#ee8224;
+	font-family: "CooperBlack";
+    font-size: 400%; /*80vw; */
+}
+
+
+#foot{
+	position: fixed;
+	bottom:0px;
+	overflow: hidden;
+    right: 0px;
+	z-index: -1;  /* immagine deve sempre essere in background rispetto alle altre */
+	height:14vh;
+	width:100%;
+}
+
+/*Gioco*/
+
+#tabella{
+	border-style:solid;
+	text-align:center;
+	cursor: default;
+	font-size:130%;
+	border-radius: 15px;
+	-moz-border-radius:15px;
+    -webkit-border-radius:15px;
+	background-color: white;
+	border-color:#ee8224;
+	margin-bottom: 1vh;
+	margin-top:1vh;
+}
+
+.letters{
+	border-radius: 50%;
+	-moz-border-radius:50%;
+    -webkit-border-radius:50%;
+	width:2.5vw;
+	height:2.5vw;
+}
+
+
+#clues{
+	border-style:solid;
+	text-align:center;
+	cursor: default;
+	background-color: white;
+	border-color:#ee8224;
+	border-radius: 15px;
+	-moz-border-radius:15px;
+    -webkit-border-radius:15px;
+	font-weight: bold;
+	height:18vh;
+	width:40vw;
+	font-size:85%;
+}
+
+
+.bordofinale{
+	background-color:#ee8224;
+	color:white;
+}
+
+.bordo{
+	background-color:#f4a157;
+	color:white;
+}
+
+.bordosoluzione{
+	font-size:110%;
+	font-weight:bold;
+	color:#f08628;
+	transition: font-weight 2s;
+	-webkit-transition: font-weight 2s;
+	
+}
+
+#risultato{
+	width:38vw;
+	height:auto;
+}
+
+#avanti{
+	display: inline;
+	position: absolute;
+    right: 0px;
+	height: 7vh;
+	width: auto;
+	padding-right: 2vw;
+	outline:none;
+	bottom:20vh;
+	
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+	padding-top: 10vh;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+	text-align: center;
+	position:relative;
+    background-color: #fefefe;
+    margin: auto;
+	padding:0;
+    border-style:solid;
+	border-color:#4d4d4d;
+	border-radius: 15px;
+	-moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    width: 40vw;
+	font-size:150%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4
+}
+
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 230%;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-5%; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-5%; opacity:0}
+    to {top:0; opacity:1}
+}

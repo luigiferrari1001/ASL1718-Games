@@ -1,0 +1,47 @@
+body{
+	background-image: url(./img/HomePageGiochi.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	}
+	
+.dim{
+	width:14%;	
+	height:7%;
+}
+	
+#cruciverba{
+	top:54%;
+	left:16%;
+	position:absolute;
+	}
+	
+#indovinelli{
+	top:86%;
+	left:11%;
+	position:absolute;
+	}
+	
+#rebus{
+	top:31%;
+	left:50%;
+	position:absolute;
+	}
+	
+#labirinti{
+	top:48%;
+	left:56%;
+	position:absolute;
+	}
+	
+#giochiparole{
+	top:90%;
+	left:74%;
+	position:absolute;
+	}
+	
+#indice{
+	top:68%;
+	left:44%;
+	position:absolute;
+	}
+	

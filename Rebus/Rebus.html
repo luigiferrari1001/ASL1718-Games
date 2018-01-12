@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="./style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../lib/jquery.js"></script>
+<!-- per evitare scrollbar -->
+<script type="text/javascript" src = "../lib/jquery-3.1.1.min.js"></script>
+
+<script type="text/javascript" src="./rebus.js"></script>
+
+<!-- Carica il primo rebus come default -->
+<script>
+    localStorage.setItem("valore", "1");
+</script>
+
+</head>
+
+
+<body onload="scegliRebus(localStorage.getItem('valore'))">
+
+<header>
+<!-- Attenzione: prima i pulsanti, POI il titolo centrato -->
+
+<a href="../IndiceGiochi.html"> <img id="indice"  src=""> </a>
+
+<input id="soluzione" type="image" src="" onclick="mostraSoluzione()">
+<div id="titolo">
+</div>
+
+</header>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="scritta"></p>
+	<img src="" alt="Hai trovato la soluzione!" id="risultato"><br>
+	<p id="scrittaSotto"></p>
+  </div>
+</div>
+
+<!-- vignetta centrale e spazi da riempire -->
+<section align="center">
+   <img src="" id="img" align="center">
+   <article id="lettere" align ="center">
+       <p  align="center"> </p>
+   </article>
+
+<!-- Tastiera e bottoni in basso -->
+
+<input id="avanti" type="image" src="" 
+    alt="Avanti"  onclick="scegliRebus(numeroRebus+1)"> 
+
+ <div id="tastiera">
+   <script src="../lib/keyboard.js"></script>
+ </div>
+
+</section>
+
+<footer>
+	<img id="foot" src="">
+</footer>
+
+</body>
+</html>

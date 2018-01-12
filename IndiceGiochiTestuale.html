@@ -1,0 +1,116 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+
+<TITLE>Progetto Autoimprenditorialità- Giochi</TITLE>
+
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#ffffff">
+<h1>Giochi</h1>
+<h2>Classe 4aii Calvino</h2>
+<ul>
+<li><a href="Aforisma/Aforisma.html">Aforisma</a> Giacomo Lombardo, Manuel Suman (gruppo 5).
+<a href="Aforisma/Aforisma.html"><button onclick="sessionStorage.setItem('valore',0)">Primo Aforisma</button></a> <br>
+<a href="Aforisma/Aforisma.html"><button onclick="sessionStorage.setItem('valore',1)">Secondo Aforisma</button></a> <br>
+<a href="Aforisma/Aforisma.html"><button onclick="sessionStorage.setItem('valore',2)">Terzo Aforisma</button></a>
+
+Aggiustare le proporzioni</li>
+<li><a href="PercorsoDiParole/PercorsoDiParoleBLU.html">Percorso di parole blu</a> Lorenzo Marinaro, Alessio Sanna (Gruppo 8) </li>
+<li><a href="PercorsoDiParole/PercorsoDiParoleVERDE.html">Percorso di parole verde</a> Lorenzo Marinaro, Alessio Sanna (Gruppo 8) </li>
+<li><a href="PercorsoDiParole/PercorsoDiParoleGIALLO.html">Percorso di parole giallo </a> Lorenzo Marinaro, Alessio Sanna (Gruppo 8)</li>
+<li><a href="ParolaInComune/index.html">Parola in comune</a>
+ Andrea Celotto, William Chen, Alessio Giambirtone  (Gruppo 12 TPSIT/ParolaMagica)
+ Problemi:<br/>
+ 1. Colori da rivedere<br/>
+ 2. quando si completa la parola l'ultima lettera non compare subito ma solo alla chiusura del pop-up<br/>
+ 3. Mancano le frecce, colori, link, etc<br/>
+ </li>
+<li><a href="Crucipuzzle/Crucipuzzle.html">Crucipuzzle</a> Gabriele Soro, Daniele Spinetti (Gruppo 3) - versione con modifiche di Nicolas Gazzo e immagini ridimensionate. Rimane il problema dell'immagine dell'indice che non è stata convertita bene.</li>
+<li><a href="Labirinto/n.27-labirinto.html">Labirinto</a> Paolo Patrone (Gruppo 6)<br/>
+<li><a href="LabirintoScroll/IndiceGiochi.html">Labirinto Scrollbar</a> Paolo Patrone (Gruppo 6)<br/>
+<li><a href="LabirintoNoScroll/IndiceGiochi.html">Labirinto No Scrollbar</a> Paolo Patrone (Gruppo 6)<br/>
+Versione 29.5.2017 modificata da Nicolas Gazzo, 
+che comprende anche il blocco dello scrolling dello schermo. 
+<br/>Problemi:
+<br/>Rimangono anche da ridimensionare le immagini. 
+<br/>Comunque si blocca.</li>
+<li><a href="Rebus/Rebus.html">Rebus</a>Federico Sacco, [Bagnasco Samuele, Rella Federico] (Gruppo 9 /TPSIT)<br/> 
+Rivisto e riorganizzato da Gabriele Soro.</li>
+<li>
+<a href="Rebus.GS/rebus.html"><button onclick="sessionStorage.setItem('valore',1)">Primo rebus</button></a> <br>
+<a href="Rebus.GS/rebus.html"><button onclick="sessionStorage.setItem('valore',2)">Secondo rebus</button></a> <br>
+<a href="Rebus.GS/rebus.html"><button onclick="sessionStorage.setItem('valore',3)">Terzo rebus</button></a> <br>
+<a href="Rebus.GS/rebus.html"><button onclick="sessionStorage.setItem('valore',4)">Quarto rebus</button></a>
+
+</li>
+
+
+</ul>
+<h2>Vecchie versioni</h2>
+<ul>
+<li><a href="Crucipuzzle-old/index.html">Crucipuzzle - versione vecchia</a> Gabriele Soro, Daniele Spinetti (Gruppo 3) - versione con modifiche di Nicolas Gazzo</li>
+<li><a href="Labirinto-old/Labirinto27.html">Labirinto</a> Paolo Patrone (Gruppo 6)</li>
+</ul>
+
+<HR>
+
+<h1>Organizzazione delle directory e scelta dei nomi dei files</h1>
+<h2> OBBLIGATORIO IL RISPETTO DI QUESTE CONVENZIONI</h2>
+<h3>Directory:</h3>
+- <b>Giochi</b><br/>
+ +-- <b>img</b> immagini generali, comuni a tutti i giochi. Comprendono le vignette epr i pop-up di risposta al completamento, le frecce, i bottoni indice, aiuto, ricomincia, etc. Nomi camel-case; formato ed estensione .png<br/>
+ +-- <b>font</b> fonts utilizzate nei diversi giochi per i titoli, spiegazione etc.<br/>
+ +-- <b>css</b> css utilizzati in tutti i giochi<br/>
+ +-- <b>lib</b> librerie javascript utilizzati in tutti i giochi (i.e. query.js)<br/>
+ 
+ +-- <b>TipoGioco</b> ad esempio Rebus, o Labirinto. Formato nomi camel case.<br/>
+ +----- <b>img</b> immmagini particolari del gioco (ad esempio vignette). Numerate con il numero del gioco se diverse per ogni particolare gioco di quel tipo. Ad esempio: Labirinto27-Inizio.png, 
+ Labirinto27-fine.png<br/>
+ +----- <b>css</b> fogli di stile particolari del gioco<br/>
+ 
+ <h3>Altre convenzioni</h3>
+ <ul>
+ <li>percorsi dei file tutti relativi, dovrebbe bastare al massimo risalire di un livello (i.e. "../img/FrecciaAvanti.png")</li>
+ <li>Immagini in formato png, estensione .png (minuscolo)</li>
+ <li></li>
+</ul>
+
+<h2>Elenco delle immagini comuni</h2>
+Vingette per i pop-up in caso di vittoria o sconfitta<ul>
+ <li>LeiFelice.png - per le pop-up</li>
+ <li>LeiTriste.png - per le pop-up, per ora manca!</li>
+ <li>LuiFelice.png - per le pop-up</li>
+ <li>LuiTriste.png - per le pop-up</li>
+</ul>
+
+Bottoni
+<ul>
+ <li></li>
+</ul>
+
+Frecce
+<ul>
+ <li></li>
+</ul>
+
+Loghi
+<ul>
+ <li></li>
+</ul>
+
+Onde per footer
+<ul>
+ <li></li>
+</ul>
+
+<h2>To do list</h2>
+<ul>
+ <li>Ridurre le dimensioni dei bottoni(ora circa 800x800)</li>
+ <li></li>
+ <li></li>
+ <li></li>
+</ul>
+
+
+</BODY>
+</HTML>

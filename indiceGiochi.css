@@ -1,0 +1,87 @@
+/*foglio css dell'indice testuale*/
+@font-face {
+  font-family: CooperBlack;
+  src: url(fonts/CooperBlack.ttf);
+}
+
+button {
+    border: none;
+    padding: 5% 5% 5% 5%;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+	border-radius: 25px;
+	font-family: "Trebuchet MS";
+    font-size: 160%;
+	width:25%;
+	display: inline-block;
+    vertical-align: middle;
+	margin: 4px;
+}
+
+.acqua {
+    background-color:#0053A1; 
+    color: white;
+}
+.ambiente {
+    background-color:#25a537; 
+    color: white;
+}
+.energia {
+    background-color:#fecc16; 
+    color: white;
+}
+.sostenibilita {
+    background-color:#e30716; 
+    color: white;
+}
+.testoacqua{
+    font-family: "CooperBlack";
+    font-size:  240%;
+	font-weight: bold;
+	text-align: center;
+	color: #0053A1;
+	
+}
+.testoambiente{
+    font-family: "CooperBlack";
+    font-size:  240%;
+	font-weight: bold;
+	text-align: center;
+	color: #25a537;
+	
+}
+.testoenergia{
+    font-family: "CooperBlack";
+    font-size:  240%;
+	font-weight: bold;
+	text-align: center;
+	color: #fecc16;
+	
+}
+.testosostenibilita{
+    font-family: "CooperBlack";
+    font-size:  240%;
+	font-weight: bold;
+	text-align: center;
+	color: #e30716;
+	
+}
+h1{
+	 font-family: "CooperBlack";
+    font-size:  160%;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 2%;
+	margin-top: 2vh;
+}
+table{
+	width:100%;
+	
+}
+td{
+	width:21%;
+}
+tr{
+	height:8.5vh;
+}
