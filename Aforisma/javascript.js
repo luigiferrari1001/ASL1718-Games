@@ -43,13 +43,13 @@ var colori=[
 ];
 
 var frase = "";
-var c;
+var c=0;
 var a = new Array();
 var posizioni = new Array();
 
 
 function inizializza(i){
-	c = i;
+	c = parseInt(i);
 	frase = frasi[c];
 	document.getElementById("foot").src = immaginiSfondo[c];
 	document.getElementById("intro").innerHTML = introduzioni[c];
@@ -64,14 +64,18 @@ function inizializza(i){
 	a = frase.split(" ");
 	a = a.sort();
 	s2 = '';
+	document.getElementById
 	for(i=0;i<a.length;i++){
 		s = '<div  class="draggable" draggable="true" ondragstart="drag('+i+')" ondrop="drop('+i+')" ondragover="allowDrop(event)" id="b'+i+'"><p class="testo"  id="ti'+i+'">'+a[i]+'</p></div>';
 		s2 = s2 + s;
 	}
 	s2 = s2 + "<br>";
 	
+	//document.getElementById('bottoni').innerHTML = s2;
 	var div = document.createElement('div');
-	div.innerHTML = s2;
+	div.innerHTML = "";	
+	div.innerHTML = s2;				
+	
 	div.id = "bottoni";
 	var clone = div.cloneNode(true);
 	document.body.appendChild(clone);

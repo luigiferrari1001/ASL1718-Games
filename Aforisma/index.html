@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<link rel="stylesheet" type="text/css" href="reset.css">
+<link rel="stylesheet" type="text/css" href="stile.css">
+<script src="javascript.js"></script>
+</head>
+<body onload="inizializza(sessionStorage.getItem('valore'))">
+
+<header>
+
+<a href="../IndiceGiochi.html"> <img id="indice"  src=""> </a>
+<input id="soluzione" type="image" src="" onclick="mostraSoluzione()">
+<div id="titolo">Ricostruisci la frase
+</div>
+</header>
+
+	<div id="introduzione" >
+		<p id="intro"></p>
+		<p id="sugg"></p>
+	</div>
+	
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+	 <p id="scritta"></p>
+	<img src="" id="risultato">
+  </div>
+</div>
+
+<input id="avanti" type="image" src="" 
+    alt="Avanti"  onclick="inizializza(c+1)"> 
+
+
+	<img id="foot" src="">
+
+
+</body>
+</html>
