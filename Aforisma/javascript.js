@@ -59,22 +59,29 @@ function inizializza(i){
 	document.getElementById("soluzione").src = immaginiSoluzione[c];
 	document.getElementById("avanti").src = immaginiAvanti[c];
 
+	
+	//spezza la frase in parole, le mette in una lista in ordine alfabetico
+	// e per ognuna crea un elemento spostabile
 	frase = frase.toUpperCase();
 	var i,s,s2;
 	a = frase.split(" ");
 	a = a.sort();
 	s2 = '';
-	document.getElementById
+	//document.getElementById
 	for(i=0;i<a.length;i++){
 		s = '<div  class="draggable" draggable="true" ondragstart="drag('+i+')" ondrop="drop('+i+')" ondragover="allowDrop(event)" id="b'+i+'"><p class="testo"  id="ti'+i+'">'+a[i]+'</p></div>';
 		s2 = s2 + s;
 	}
 	s2 = s2 + "<br>";
 	
+	//NON carica i bottoni:
 	//document.getElementById('bottoni').innerHTML = s2;
+	
+	// versione che carica i bottoni ma duplica i successivi
 	var div = document.createElement('div');
-	div.innerHTML = "";	
 	div.innerHTML = s2;				
+	//fine
+	
 	
 	div.id = "bottoni";
 	var clone = div.cloneNode(true);
