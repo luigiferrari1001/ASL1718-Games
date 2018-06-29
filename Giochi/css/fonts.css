@@ -1,0 +1,14 @@
+/* fonts.css
+	fonts utilizzati nei giochi
+	Histry: versione 24.7.2017 Versione Originale
+*/
+
+@font-face {
+  font-family: TrebuchetMS;
+  src: url(../fonts/TrebuchetMS.ttf);
+}
+
+@font-face {
+  font-family: CooperBlack;
+  src: url(../fonts/CooperBlack.ttf);
+}

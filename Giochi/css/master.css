@@ -1,0 +1,54 @@
+@font-face {
+	font-family: Title;
+	src: url(Chunkfive.ttf);
+}
+
+.Main {
+    margin-top: -10px;
+    padding: 0;
+}
+
+.NoMarginRow {
+    margin-right: 0;
+}
+
+.NoPadding {
+    padding: 0;
+}
+
+.AltoSinistra {
+    margin-left: 15%;
+    margin-top: 15%;
+}
+
+.BassoSinistra {
+    margin-left: 15%;
+    margin-top: 77vh;
+}
+
+h1 {
+	margin: 0;
+	font-family: Title;
+}
+
+.TitleContainer {
+	margin-top: 2%;
+	font-size: 180%;
+	text-align: center;
+}
+
+.ImgContainer {
+	text-align: center;
+}
+
+.Title {
+	padding-top: 4%;
+}
+
+.Colore {
+	color: #0053a1;
+}
+
+#image {
+	width: 40%;
+}
