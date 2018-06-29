@@ -1,0 +1,27 @@
+/* commonvars.css
+	Variabili, come ad esempio i codici dei colori, utilizzati nei giochi
+	History: versione 24.7.2017 Versione Originale
+	
+	Esempio di utilizzo:
+	in cima al file .css:
+	 
+	@import url("../css/commonvars.css");
+	
+	Nel resto del file 
+	
+	h1 {
+     color: var(--red);
+    }
+    #MyText {
+       color: var(--blue);
+       width: var(--fullwidth);
+    }
+*/
+
+:root {
+  --rosso: #E30716;
+  --blu: #0053A1;
+  --arancione: #EE7306;
+  --giallo: #FECC16;
+  --verde: #25A537;
+}
